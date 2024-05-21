@@ -11,6 +11,7 @@ nav{
     color: black;
     font-family: 'Poppins','Lato',serif;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     box-shadow: 0 0 8px grey;
 }
@@ -51,8 +52,12 @@ nav::-webkit-scrollbar{
 }
 
 .nav-links li{
+    display: inherit;
+    justify-content: center;
     list-style: none;
-    padding: 15px 50px;
+    padding: 15px 0px;
+    width: 25%;
+    min-width: 80px;
     border-right: 2px solid white;
     border-left: 2px solid white;
     animation: ease-in-out 0.5s;
@@ -67,7 +72,8 @@ nav::-webkit-scrollbar{
 
 .search{
     width: 20%;
-    margin-left: auto;
+    min-width: 200px;
+    margin-left: 100px ;
     padding-right: 20px;
 }
 
@@ -94,6 +100,7 @@ nav::-webkit-scrollbar{
 
 .sign-in{
     width: 7%;
+    min-width: 90px;
     padding: 0 20px 0 0 ;
 }
 
