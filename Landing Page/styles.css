@@ -118,3 +118,79 @@ nav::-webkit-scrollbar{
 .sign-in button:hover{
     background-color:  yellow;
 }
+
+.moto{
+    padding: 12px 0 10px 15px;
+    height: 50px;
+    font-family: 'Poppins','Lato',serif;
+    color: grey;
+    font-size: 1rem;
+}
+
+.moto span{
+    transition: ease-in-out 0.1s;
+}
+
+#link2:hover{
+    color: tomato;   
+}
+
+#link1:hover{
+    color:deepskyblue;
+}
+
+.card{ 
+    width: 100%;
+    height: 70vh;
+    background-image:url("./card.avif") ;   
+}
+
+.card div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto',lato,serif;
+}
+
+.card h1{
+    font-size: 3rem;
+    color:rgb(84, 9, 9);
+    font-weight: 600;
+    padding: 35px;
+}
+
+.card bold{
+    font-weight: 900;
+}
+
+.card h3{
+    font-size: 2rem;
+    color: rgb(43, 33, 33);
+    font-weight: 500;
+    padding: 30px;
+}
+
+.card button{
+    margin-top: 40px;
+    margin-bottom: 120px;
+    width: 130px;
+    height: 50px;
+    border-radius: 40px;
+    background-color:#1877F2;
+    border: transparent;
+    font-family: 'Roboto',lato,serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    transition: ease-in-out 0.15s;
+}
+
+.card button:hover{
+    transform: scale(1.1);
+    background-color:darkslategray;
+}
+
+
