@@ -149,7 +149,8 @@ main{
 .dashboard{ 
     width: 100%;
     height: 70vh;
-    background-image:url("./dashboard.avif") ;   
+    background-image:url("./dashboard.avif") ; 
+    box-shadow: 0 0 2px #cfcfe7;  
     margin-bottom: 25px;
 }
 
@@ -277,5 +278,141 @@ bold{
     transform: scale(1.1);
 }
 
+.internship{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: min-max(100px,auto);
+    grid-template-rows: 10px auto;
+    column-gap: 100px;
+    row-gap: 120px;
+    padding: 14vh 10.75% 25px 10.75%;
+}
 
+.internship h2{
+    grid-column: 1/4;
+    text-align: center;
+    font-family: "Poppins","lato",serif;
+    font-size: 2rem;
+    font-weight: 650;
+}
 
+.internship img{
+    width: 80%;
+    height: 40%;
+    max-height: 200px;
+    border-radius: 70px;
+    margin: 10px 10%;
+}
+
+.option{
+    font-family: 'Poppins','lato',serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.option h3{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.option p{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.option button{
+    width: 30%;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #1877F2;
+    border: transparent;
+    color: white;
+    font-family: 'Poppins','lato',serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: ease-in-out 0.15s;
+    margin: auto  35% 0 35%;
+    align-items: end;
+}
+
+.option button:hover{
+    background-color: darkslategray;
+    transform: scale(1.1);
+}
+
+.community{
+    margin: 8vh 0 25px 0;
+    width: 100vw;
+    height: 55vh;
+    background:linear-gradient(145deg,#c2c8c5,#ddddda,#c2c8c5,#ddddda);
+    box-shadow: 0 0 2px #ddddda;
+    font-family: 'Poppins','lato',serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.community h3{
+    font-size: 1.8rem;
+
+}
+
+.community > p{
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.stats{
+    height: 25%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stats div{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stats h4{
+    font-size: 1.5rem;
+    color:steelblue;
+}
+
+.stats p{
+    font-size: 0.9rem;
+}
+
+.stats i{
+    margin-top: 4%;
+    color:darkslategray;
+    font-size: 2rem;
+    transition: ease-in-out 0.15s;
+}
+
+.fa-instagram:hover{
+    color: #E1306C;
+}
+
+.fa-linkedin-in:hover{
+    color: #0A66C2;
+}
+
+.fa-facebook-f:hover{
+    color: #1877F2;
+}
+
+.fa-telegram-plane:hover{
+    color: #0088cc;
+}
