@@ -157,7 +157,7 @@ main{
 
 .dashboard{ 
     width: 100%;
-    height: 70vh;
+    height: auto;
     background-image:url("./dashboard.avif") ; 
     box-shadow: 0 0 2px #cfcfe7;  
     margin-bottom: 25px;
@@ -213,7 +213,7 @@ bold{
 
 .about-us{
     width: 100%;
-    height: 45vh;
+    height: auto;
     padding: 3vh 10.75% 25px 10.75%; 
     font-family: 'Poppins','lato',serif;
 }
@@ -230,16 +230,15 @@ bold{
 
 .services{
     width: 100%;
-    height: 45vh;
+    height: auto;
     padding: 3vh 0 25px 15px; 
     font-family: 'Poppins','lato',serif;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
  .card{
     width:36%;
-    height: 100%;
+    height:minmax(250px,100%);
     background:linear-gradient(45deg,#f2f1f9,#fefeff,#cfcfe7,#e9e9f3) ;
     padding: 10px 20px;
     box-shadow: 0 0 2px #cfcfe7;
@@ -358,7 +357,7 @@ bold{
 .community{
     margin: 8vh 0 0 0;
     width: 100vw;
-    height: 55vh;
+    height: auto;
     background:linear-gradient(145deg,#c2c8c5,#ddddda,#c2c8c5,#ddddda);
     box-shadow: 0 0 2px #ddddda;
     font-family: 'Poppins','lato',serif;
@@ -369,24 +368,26 @@ bold{
 }
 
 .community h3{
+    height: auto;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
-
+    margin: 40px 0 20px 0;
 }
 
 .community > p{
+    height: 80px;
     width: 60%;
     font-size: 1rem;
     text-align: center;
-    margin-top: -4%;
 }
 
 .stats{
-    height: 25%;
+    height: 100px;    
     width: 97%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 20px 0 40px 0;
 }
 
 .stats div{
@@ -431,12 +432,13 @@ bold{
 }
 
 .invite{
-    height: 20vh;
+    height: auto;
     width: 100vw;
     background: linear-gradient(130deg,#9f8189,#eab595);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 0;
 }
 
 .invite h3{
@@ -450,13 +452,14 @@ bold{
 
 .footer{
     width: 100vw;
-    height: 20vh;
+    height: auto;
     background-color: #EBEADF;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Poppins','lato',serif;
+    padding: 15px 0;
 }
 
 .footer h3{
