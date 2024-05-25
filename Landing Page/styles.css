@@ -139,12 +139,13 @@ main{
     font-size: 1rem;
 }
 
-.moto a:visited{
+.moto a{
     color:grey;
+    transition: ease-in-out 0.1s;
 }
 
-.moto span{
-    transition: ease-in-out 0.1s;
+.moto a:visited{
+    color:grey;
 }
 
 #link2:hover{
@@ -158,7 +159,7 @@ main{
 .dashboard{ 
     width: 100%;
     height: auto;
-    background-image:url("./dashboard.avif") ; 
+    background-image:url("./images/dashboard.avif") ; 
     box-shadow: 0 0 2px #cfcfe7;  
     margin-bottom: 25px;
 }
@@ -178,6 +179,7 @@ main{
     color:rgb(84, 9, 9);
     font-weight: 600;
     padding: 35px;
+    margin-top: 2%;
 }
 
 bold{
@@ -189,10 +191,11 @@ bold{
     color: rgb(43, 33, 33);
     font-weight: 500;
     padding: 30px;
+    margin-top: 3%;
 }
 
 .dashboard button{
-    margin-top: 40px;
+    margin-top: 10%;
     margin-bottom: 120px;
     width: 130px;
     height: 50px;
@@ -379,6 +382,7 @@ bold{
     width: 60%;
     font-size: 1rem;
     text-align: center;
+    margin-top: -1%;
 }
 
 .stats{
@@ -442,7 +446,7 @@ bold{
 }
 
 .invite h3{
-    font-size: 3rem;
+    font-size: 3.17rem;
     font-family: "popins","lato",serif;
     color: white;
     font-weight: 900;
@@ -466,12 +470,14 @@ bold{
     font-size: 1.75rem;
     color: black;
     letter-spacing: 0.1rem;
+    margin-top: 1%;
 }
 
 .footer div{
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 45%;
+    margin-top: 0.7%;
 }
 
 .footer i{
@@ -489,13 +495,16 @@ bold{
 }
 
 .footer p{
+    margin-top: 1% ;
     font-size: 1rem;
     color: black;
-    letter-spacing: 0.15rem;
-    word-spacing: 0.2rem;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.175rem;
+    margin-top: 2%;
 }
 
 .footer a{
+    color: black;
     font-weight: 600;
     transition: ease-in-out 0.15s;
 }
