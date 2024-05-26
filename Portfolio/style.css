@@ -19,6 +19,7 @@ body{
     height: auto;
     padding: 2.5px 15%;
     box-shadow: 0 -1px 6px rgb(53, 60, 67);
+    z-index: 1;
 }
 
 .logo img{
@@ -147,3 +148,64 @@ hr{
     margin: -10% 0 0 -12%;
     transform: rotate(-30deg);
 }
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 15.25%;
+    margin: 8% 0;
+    color: white;
+    font-family: 'Outfit', 'Roboto', sans-serif;
+}
+
+.about h2{
+    font-size: 2.35rem;
+    font-weight: 725;
+    text-wrap: nowrap;
+    padding: 3px 0;
+    color: #cf1b1b;
+    border-bottom: 3.5px solid #cf1b1b;
+}
+
+.card-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.card-cont img{
+    width: 30%;
+    height: auto;
+    margin:  5% 0;
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 56.75%;
+    padding: 0 0 0 1.5%;
+    height: auto;
+}
+
+.info h3{
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.info p{
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
