@@ -4,24 +4,10 @@
     padding: 0;
 }
 
-/* .bubble {
-    z-index: 1;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color:white; 
-    border-radius: 50%;
-    animation: fall 5s linear infinite; 
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
-} */
-
 body{
     background-color: #0c0c0c;
+    margin: 0;
+    overflow: none;
 }
 
 .header{
@@ -85,6 +71,7 @@ body{
     padding: 10% 0 0 15.25%;
     color: white;
     font-family: 'Outfit', 'Roboto', sans-serif;
+    z-index: 0;
 }
 
 .description h1{
