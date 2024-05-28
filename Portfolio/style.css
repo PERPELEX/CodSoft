@@ -296,15 +296,49 @@ hr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
+    row-gap: 25px;
     width: 100%;
     height: auto;
     padding: 5% 0;
 }
 
-.project-grid div{
+.project-grid div {
+    position: relative;
     width: 100%;
     height: auto;
-    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-grid div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/proj.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.25s ease-in-out;
+}
+
+#cont1::before{
+    background-image: url("./images/proj1.png");
+
+}
+
+#cont2::before{
+    background-image: url("./images/proj2.png");
+}   
+
+#cont3::before{
+    background-image: url("./images/proj3.png");
+}
+
+
+.project-grid div:hover::before {
+    transform: scale(1.2);
 }
 
 .project-grid img{
@@ -315,7 +349,163 @@ hr{
 
 .project-grid p{
     width: 100%;
-    padding: 0 0 0 35% ;
+    text-align: center;
     position: relative;
-    top: -80px;
+    padding: 25%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: transparent;
+    border-radius: 15px;
+    transition: ease-in-out 0.25s;
+}
+
+.project-grid p:hover{
+    color: white    ;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.projects button{
+    width: 160px;
+    background-color: #cf1b1b;
+    color: white;
+    font-family: 'Outfit', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
+
+.projects button:hover{
+    background-color: #a00f0f;
+    transform: scale(1.05);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 15.25%;
+    margin: 8% 0;
+    color: white;
+    font-family: 'Outfit', 'Roboto', sans-serif;
+}
+
+.contact h2{
+    font-size: 2.35rem;
+    font-weight: 725;
+    text-wrap: nowrap;
+    padding: 3px 0;
+    color: #cf1b1b;
+    border-bottom: 3.5px solid #cf1b1b;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+}
+
+.credentials{
+    width: 35%;
+    height: auto;
+    padding: 1.5%;
+    margin: 1.5% 0;
+    border: none;
+    border-radius: 10px;
+    font-family: "Outfit", 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.message{
+    height:170px;
+}
+
+.contact button{
+    width: 160px;
+    background-color: #cf1b1b;
+    color: white;
+    font-family: 'Outfit', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin: 1.5% 0 ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
+
+.contact button:hover{
+    background-color: #a00f0f;
+    transform: scale(1.05);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14191b;
+    width: 100%;
+    height: auto;
+    padding: 0% 15.25%;
+    margin: 8% 0 0 0;
+    box-shadow: 0 1px 6px rgb(53, 60, 67);
+    font-family: 'Outfit', 'Roboto', sans-serif;
+    color: white;
+}
+
+.footer h3{
+    font-size: 2rem;
+    font-weight: 650;
+    text-wrap: nowrap;
+    margin: 2% 0;
+}
+
+.icons-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: auto;
+    margin: 2% 0;
+    font-size: 1.35rem;
+}
+
+.icons-footer i{
+    transition: ease-in-out 0.15s;
+}
+
+.fa-linkedin-in:hover{
+    color: #0a66c2;
+}
+
+.fa-github:hover{
+    color: #6e5494;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-envelope:hover{
+    color: #cf1b1b;
+}
+
+.footer p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2% 0;
 }
