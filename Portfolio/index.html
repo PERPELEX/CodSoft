@@ -34,7 +34,7 @@
             <div id="particles-js"></div>
             <section class="home">
                 <div class="description">
-                    <h1>Hi,<br><hr>I'm <span class="red">Hannan</span><br><hr>Web Developer</h1>
+                    <h1>Hi,<br><hr>I'm <span class="red">Hannan</span><br><hr><span id="auto-typing" ></span></h1>
                     <button>Contact</button>
                     <div class="icons">
                         <i class="fab fa-linkedin-in"></i>
@@ -193,7 +193,7 @@
                   "detect_on": "canvas",
                   "events": {
                     "onhover": {
-                      "enable": true,
+                      "enable": false,
                       "mode": "repulse"
                     },
                     "onclick": {
@@ -231,6 +231,15 @@
                 "retina_detect": true
               }
             );
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#auto-typing', {
+            strings: ['Web Developer', 'Coding Addict','Anime Fan','Badaminton Lover'],
+            typeSpeed: 110,
+            backSpeed: 50,
+            loop: true
+          });
         </script>
     </body>
 </html>

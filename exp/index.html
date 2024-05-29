@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Exp</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="type-style.css">
         <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <!-- stats.js lib -->
@@ -11,7 +12,9 @@
     </head>
     <body>
         <div id="particles-js">
-            
+        </div>
+        <div class="container">
+          <h1><span id="auto-typing"></span></h1>
         </div> <!-- stats - count particles -->
         <!-- <div class="count-particles">
             <span class="js-count-particles">--</span>
@@ -125,6 +128,15 @@
                 "retina_detect": true
               }
             );
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#auto-typing', {
+            strings: ['Web Developer', 'Coding Addict','Anime Fan','Badaminton Lover'],
+            typeSpeed: 110,
+            backSpeed: 50,
+            loop: true
+          });
         </script>
     </body>
 </html>
