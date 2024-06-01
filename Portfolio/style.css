@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-  
-* {
     scrollbar-width: thin;
     scrollbar-color: #cf1b1b #14191b;
+}
+  
+:root {
+   font-size: 16px;
 }
 
 body{
@@ -26,7 +27,7 @@ body{
     height: auto;
     padding: 2.5px 15%;
     box-shadow: 0 -1px 6px rgb(53, 60, 67);
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo img{
@@ -64,6 +65,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
 .description{
@@ -182,6 +186,7 @@ hr{
     text-wrap: nowrap;
     padding: 3px 0;
     color: #cf1b1b;
+    z-index: 1;
 }
 
 .card-cont{
@@ -191,6 +196,7 @@ hr{
     align-items: center;
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 
 .card-cont img{
@@ -242,6 +248,7 @@ hr{
     text-wrap: nowrap;
     padding: 3px 0;
     color: #cf1b1b;
+    z-index: 1;
 }
 
 .skill-grid{
@@ -252,6 +259,7 @@ hr{
     width: 100%;
     height: auto;
     padding: 5% 0;
+    z-index: 1;
 }
 
 .skill-grid div{
@@ -327,6 +335,7 @@ hr{
     text-wrap: nowrap;
     padding: 3px 0;
     color: #cf1b1b;
+    z-index: 1;
 }
 
 .project-grid{
@@ -337,6 +346,7 @@ hr{
     width: 100%;
     height: auto;
     padding: 5% 0;
+    z-index: 1;
 }
 
 .project-grid div {
@@ -413,6 +423,7 @@ hr{
     border-radius: 10px;
     cursor: pointer;
     transition: ease-in-out 0.25s;
+    z-index: 1;
 }
 
 .projects button:hover{
@@ -440,6 +451,7 @@ hr{
     text-wrap: nowrap;
     padding: 3px 0;
     color: #cf1b1b;
+    z-index: 1;
 }
 
 .form{
@@ -450,6 +462,7 @@ hr{
     width: 100%;
     height: auto;
     padding: 5% 0;
+    z-index: 1;
 }
 
 .credentials{
@@ -501,6 +514,7 @@ hr{
     box-shadow: 0 1px 6px rgb(53, 60, 67);
     font-family: 'Outfit', 'Roboto', sans-serif;
     color: white;
+    z-index: 1;
 }
 
 .footer h3{
@@ -508,6 +522,7 @@ hr{
     font-weight: 650;
     text-wrap: nowrap;
     margin: 2% 0;
+    z-index: 1;
 }
 
 .icons-footer{
@@ -519,6 +534,7 @@ hr{
     height: auto;
     margin: 2% 0;
     font-size: 1.35rem;
+    z-index: 1;
 }
 
 .icons-footer a{
@@ -550,4 +566,161 @@ hr{
     font-size: 1.1rem;
     font-weight: 600;
     margin: 2% 0;
+    z-index: 1;
 }
+
+@media screen and (max-width: 992px) {
+    :root {
+      font-size: 14px;
+    }
+
+    .list {
+        width: 70%;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .description{
+        padding: 15% 0 0 10%;
+    }
+
+    .pfp-container{
+        width: 300px;
+        height: 300px;
+        margin: 10% 10% 0 auto;
+    }
+
+    .about{
+        padding-top:12%;
+    }
+
+    .card-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-cont img{
+        width: 50%
+    }
+
+    .info{
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills{
+        padding-top: 12%;
+    }
+
+    .skill-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects{
+        margin-top: 40%;
+        padding-top: 12%;
+    }
+
+    .project-grid{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+       
+    .projects button{
+        margin-top: 5%;
+    }
+
+    .contact{
+        padding-top: 12%;
+    }
+    
+    .credentials{
+        width: 100%;
+        margin: 2% 0;
+    }
+    
+    .form button{
+        margin: 2% 0;
+    }
+
+  }
+
+  @media screen and (max-width: 480px){
+    :root {
+        font-size: 10px;
+      }
+
+    .header{
+        padding: 2.5px 2%;
+    }
+
+    .list a{
+        font-size: 1.25rem;
+    }
+
+    .description{
+        padding: 50% 0 0 6%;
+    }
+
+    .icons{
+        flex-direction: column;
+        padding: 20% 0 0 6%;
+        width:6%;
+        margin: 0;
+    }
+
+    .icons i{
+        padding: 80% 0;
+        font-size: 2rem;
+    }
+
+    .pfp-container{
+        width:200px;
+        height: 200px;
+        margin: -30% 8% 0 auto;
+        border-radius: 60px;
+    }
+
+    .about{
+        padding: 20% 2% 0 2%;
+    }
+
+    .card-cont img{
+        width: 60%
+    }
+
+    .info h3{
+        padding-bottom:0 ;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .skills{
+        padding: 20% 3% 0 3%;
+    }
+
+    .skill-grid i{
+        font-size: 2.5rem;
+    }
+
+    .skill-grid p{
+        font-size: 1.5rem;
+    }
+
+    .projects{
+        padding: 20% 3% 0 3%;
+        margin-top: 60%;
+    }
+
+    .contact{
+        padding: 20% 3% 0 3%;
+    }
+
+
+  }

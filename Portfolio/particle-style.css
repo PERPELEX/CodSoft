@@ -53,3 +53,19 @@ canvas{
  .count-particles{ 
     border-radius: 0 0 3px 3px; 
 }
+
+@media screen and (max-width: 992px) {
+    #particles-js{ 
+        
+        height: 120%; 
+         
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    #particles-js{ 
+        
+        height: 80%; 
+         
+    } 
+}
